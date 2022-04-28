@@ -36,8 +36,8 @@ namespace CalcularFrete
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkIdaVolta = new System.Windows.Forms.CheckBox();
+            this.checkIda = new System.Windows.Forms.CheckBox();
             this.txtLocal = new System.Windows.Forms.TextBox();
             this.txtDistancia = new System.Windows.Forms.TextBox();
             this.txtCombustivel = new System.Windows.Forms.TextBox();
@@ -117,25 +117,26 @@ namespace CalcularFrete
             this.label6.TabIndex = 5;
             this.label6.Text = "Tabela:";
             // 
-            // checkBox1
+            // checkIdaVolta
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(333, 86);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(76, 17);
-            this.checkBox1.TabIndex = 6;
-            this.checkBox1.Text = "Ida / Volta";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkIdaVolta.AutoSize = true;
+            this.checkIdaVolta.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.checkIdaVolta.Location = new System.Drawing.Point(333, 86);
+            this.checkIdaVolta.Name = "checkIdaVolta";
+            this.checkIdaVolta.Size = new System.Drawing.Size(76, 17);
+            this.checkIdaVolta.TabIndex = 6;
+            this.checkIdaVolta.Text = "Ida / Volta";
+            this.checkIdaVolta.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // checkIda
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(415, 86);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(41, 17);
-            this.checkBox2.TabIndex = 7;
-            this.checkBox2.Text = "Ida";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkIda.AutoSize = true;
+            this.checkIda.Location = new System.Drawing.Point(415, 86);
+            this.checkIda.Name = "checkIda";
+            this.checkIda.Size = new System.Drawing.Size(41, 17);
+            this.checkIda.TabIndex = 7;
+            this.checkIda.Text = "Ida";
+            this.checkIda.UseVisualStyleBackColor = true;
             // 
             // txtLocal
             // 
@@ -161,6 +162,7 @@ namespace CalcularFrete
             // btnConfirma
             // 
             this.btnConfirma.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnConfirma.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnConfirma.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConfirma.Location = new System.Drawing.Point(12, 174);
             this.btnConfirma.Name = "btnConfirma";
@@ -168,24 +170,25 @@ namespace CalcularFrete
             this.btnConfirma.TabIndex = 8;
             this.btnConfirma.Text = "Confirmar";
             this.btnConfirma.UseVisualStyleBackColor = false;
+            this.btnConfirma.Click += new System.EventHandler(this.btnConfirma_Click);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(9, 233);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(115, 13);
+            this.label7.Size = new System.Drawing.Size(136, 13);
             this.label7.TabIndex = 14;
-            this.label7.Text = "Consumo combustível:";
+            this.label7.Text = "Autonomia de combustível:";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(176, 233);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(113, 13);
+            this.label8.Size = new System.Drawing.Size(136, 13);
             this.label8.TabIndex = 15;
-            this.label8.Text = "Despesa combustível:";
+            this.label8.Text = "Despesa com combustível:";
             // 
             // label9
             // 
@@ -258,8 +261,8 @@ namespace CalcularFrete
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.checkBox1);
-            this.panel1.Controls.Add(this.checkBox2);
+            this.panel1.Controls.Add(this.checkIdaVolta);
+            this.panel1.Controls.Add(this.checkIda);
             this.panel1.Controls.Add(this.txtLocal);
             this.panel1.Controls.Add(this.txtDistancia);
             this.panel1.Controls.Add(this.txtCombustivel);
@@ -344,8 +347,8 @@ namespace CalcularFrete
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox checkIdaVolta;
+        private System.Windows.Forms.CheckBox checkIda;
         private System.Windows.Forms.TextBox txtLocal;
         private System.Windows.Forms.TextBox txtDistancia;
         private System.Windows.Forms.TextBox txtCombustivel;

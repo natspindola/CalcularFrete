@@ -12,6 +12,9 @@ namespace CalcularFrete
 {
     public partial class Calcular_Frete : Form
     {
+        float KMRodada = 0;
+        float KmAutonomia = 0;
+
         public Calcular_Frete()
         {
             InitializeComponent();
@@ -43,6 +46,21 @@ namespace CalcularFrete
             else
             {
                 
+            }
+        }
+
+        private void btnConfirma_Click(object sender, EventArgs e)
+        {
+            KMRodada = float.Parse(txtDistancia.Text);
+
+            float KmDobrado = 0;
+            if (checkIda.Checked == true)
+            {
+                KmDobrado = KMRodada * 1;
+            }
+            else if (checkIdaVolta.Checked == true)
+            {
+                KmDobrado = KMRodada * 2;
             }
         }
     }
