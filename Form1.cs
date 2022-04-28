@@ -10,11 +10,32 @@ using System.Windows.Forms;
 
 namespace CalcularFrete
 {
-    public partial class Form1 : Form
+    public partial class Calcular_Frete : Form
     {
-        public Form1()
+        public Calcular_Frete()
         {
             InitializeComponent();
+        }
+
+        private void txtvVeiculo_TextChanged(object sender, EventArgs e)
+        {
+            if(txtVeiculo.Text == "carro")
+            {
+                imgVeiculo.Image = CalcularFrete.Properties.Resources.carro;
+                
+            }
+            else if(txtVeiculo.Text == "moto")
+            {
+                imgVeiculo.Image = CalcularFrete.Properties.Resources.moto;
+            }
+            else if(txtVeiculo.Text == "caminhão")
+            {
+                imgVeiculo.Image = CalcularFrete.Properties.Resources.caminhao;
+            }
+            else if(txtVeiculo.Text == "van")
+            {
+                imgVeiculo.Image = CalcularFrete.Properties.Resources.van;
+            }
         }
     }
 }

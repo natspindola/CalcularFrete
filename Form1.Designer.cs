@@ -1,7 +1,7 @@
 ﻿
 namespace CalcularFrete
 {
-    partial class Form1
+    partial class Calcular_Frete
     {
         /// <summary>
         /// Required designer variable.
@@ -29,6 +29,7 @@ namespace CalcularFrete
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Calcular_Frete));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -37,7 +38,6 @@ namespace CalcularFrete
             this.label6 = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.txtvVeiculo = new System.Windows.Forms.TextBox();
             this.txtLocal = new System.Windows.Forms.TextBox();
             this.txtDistancia = new System.Windows.Forms.TextBox();
             this.txtCombustivel = new System.Windows.Forms.TextBox();
@@ -53,12 +53,13 @@ namespace CalcularFrete
             this.txtCustoKM = new System.Windows.Forms.TextBox();
             this.txtTotal = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.cmbTabela = new System.Windows.Forms.ComboBox();
+            this.imgFrota = new System.Windows.Forms.PictureBox();
+            this.imgVeiculo = new System.Windows.Forms.PictureBox();
+            this.txtVeiculo = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgFrota)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgVeiculo)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -136,13 +137,6 @@ namespace CalcularFrete
             this.checkBox2.Text = "Ida";
             this.checkBox2.UseVisualStyleBackColor = true;
             // 
-            // txtvVeiculo
-            // 
-            this.txtvVeiculo.Location = new System.Drawing.Point(11, 37);
-            this.txtvVeiculo.Name = "txtvVeiculo";
-            this.txtvVeiculo.Size = new System.Drawing.Size(156, 20);
-            this.txtvVeiculo.TabIndex = 1;
-            // 
             // txtLocal
             // 
             this.txtLocal.Location = new System.Drawing.Point(174, 37);
@@ -187,7 +181,7 @@ namespace CalcularFrete
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(194, 233);
+            this.label8.Location = new System.Drawing.Point(176, 233);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(113, 13);
             this.label8.TabIndex = 15;
@@ -205,7 +199,7 @@ namespace CalcularFrete
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(191, 286);
+            this.label10.Location = new System.Drawing.Point(173, 286);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(74, 13);
             this.label10.TabIndex = 17;
@@ -214,7 +208,7 @@ namespace CalcularFrete
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(376, 286);
+            this.label11.Location = new System.Drawing.Point(332, 286);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(34, 13);
             this.label11.TabIndex = 18;
@@ -224,43 +218,43 @@ namespace CalcularFrete
             // 
             this.txtConsumo.Location = new System.Drawing.Point(12, 249);
             this.txtConsumo.Name = "txtConsumo";
-            this.txtConsumo.Size = new System.Drawing.Size(173, 20);
+            this.txtConsumo.Size = new System.Drawing.Size(157, 20);
             this.txtConsumo.TabIndex = 9;
             // 
             // txtDespesa
             // 
-            this.txtDespesa.Location = new System.Drawing.Point(194, 249);
+            this.txtDespesa.Location = new System.Drawing.Point(176, 249);
             this.txtDespesa.Name = "txtDespesa";
-            this.txtDespesa.Size = new System.Drawing.Size(173, 20);
+            this.txtDespesa.Size = new System.Drawing.Size(135, 20);
             this.txtDespesa.TabIndex = 10;
             // 
             // txtKMRodado
             // 
             this.txtKMRodado.Location = new System.Drawing.Point(12, 302);
             this.txtKMRodado.Name = "txtKMRodado";
-            this.txtKMRodado.Size = new System.Drawing.Size(173, 20);
+            this.txtKMRodado.Size = new System.Drawing.Size(157, 20);
             this.txtKMRodado.TabIndex = 11;
             // 
             // txtCustoKM
             // 
-            this.txtCustoKM.Location = new System.Drawing.Point(194, 302);
+            this.txtCustoKM.Location = new System.Drawing.Point(176, 302);
             this.txtCustoKM.Name = "txtCustoKM";
-            this.txtCustoKM.Size = new System.Drawing.Size(173, 20);
+            this.txtCustoKM.Size = new System.Drawing.Size(135, 20);
             this.txtCustoKM.TabIndex = 12;
             // 
             // txtTotal
             // 
-            this.txtTotal.Location = new System.Drawing.Point(379, 302);
+            this.txtTotal.Location = new System.Drawing.Point(335, 302);
             this.txtTotal.Name = "txtTotal";
-            this.txtTotal.Size = new System.Drawing.Size(173, 20);
+            this.txtTotal.Size = new System.Drawing.Size(153, 20);
             this.txtTotal.TabIndex = 13;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.panel1.Controls.Add(this.txtVeiculo);
             this.panel1.Controls.Add(this.cmbTabela);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.txtvVeiculo);
+            this.panel1.Controls.Add(this.imgFrota);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label6);
@@ -273,24 +267,8 @@ namespace CalcularFrete
             this.panel1.Controls.Add(this.label5);
             this.panel1.Location = new System.Drawing.Point(2, 37);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(791, 131);
+            this.panel1.Size = new System.Drawing.Size(774, 131);
             this.panel1.TabIndex = 24;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(492, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(299, 131);
-            this.pictureBox1.TabIndex = 13;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(558, 184);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(235, 138);
-            this.pictureBox2.TabIndex = 14;
-            this.pictureBox2.TabStop = false;
             // 
             // cmbTabela
             // 
@@ -300,13 +278,39 @@ namespace CalcularFrete
             this.cmbTabela.Size = new System.Drawing.Size(153, 21);
             this.cmbTabela.TabIndex = 5;
             // 
-            // Form1
+            // imgFrota
+            // 
+            this.imgFrota.Image = ((System.Drawing.Image)(resources.GetObject("imgFrota.Image")));
+            this.imgFrota.Location = new System.Drawing.Point(490, 0);
+            this.imgFrota.Name = "imgFrota";
+            this.imgFrota.Size = new System.Drawing.Size(282, 131);
+            this.imgFrota.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgFrota.TabIndex = 13;
+            this.imgFrota.TabStop = false;
+            // 
+            // imgVeiculo
+            // 
+            this.imgVeiculo.Location = new System.Drawing.Point(520, 184);
+            this.imgVeiculo.Name = "imgVeiculo";
+            this.imgVeiculo.Size = new System.Drawing.Size(254, 138);
+            this.imgVeiculo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgVeiculo.TabIndex = 14;
+            this.imgVeiculo.TabStop = false;
+            // 
+            // txtVeiculo
+            // 
+            this.txtVeiculo.Location = new System.Drawing.Point(10, 37);
+            this.txtVeiculo.Name = "txtVeiculo";
+            this.txtVeiculo.Size = new System.Drawing.Size(156, 20);
+            this.txtVeiculo.TabIndex = 1;
+            // 
+            // Calcular_Frete
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(817, 339);
-            this.Controls.Add(this.pictureBox2);
+            this.ClientSize = new System.Drawing.Size(783, 332);
+            this.Controls.Add(this.imgVeiculo);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.txtTotal);
             this.Controls.Add(this.txtCustoKM);
@@ -320,12 +324,12 @@ namespace CalcularFrete
             this.Controls.Add(this.label7);
             this.Controls.Add(this.btnConfirma);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "Calcular_Frete";
+            this.Text = "Calcular frete";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgFrota)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgVeiculo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -341,7 +345,6 @@ namespace CalcularFrete
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.TextBox txtvVeiculo;
         private System.Windows.Forms.TextBox txtLocal;
         private System.Windows.Forms.TextBox txtDistancia;
         private System.Windows.Forms.TextBox txtCombustivel;
@@ -357,9 +360,10 @@ namespace CalcularFrete
         private System.Windows.Forms.TextBox txtCustoKM;
         private System.Windows.Forms.TextBox txtTotal;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox imgFrota;
         private System.Windows.Forms.ComboBox cmbTabela;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox imgVeiculo;
+        private System.Windows.Forms.TextBox txtVeiculo;
     }
 }
 
