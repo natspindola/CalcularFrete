@@ -14,7 +14,8 @@ namespace CalcularFrete
     {
         float KMRodada = 0;
         float KmAutonomia = 0;
-        float custoCombustivel = 0;
+        float QtdCombustivel = 0;
+        double custoCombustivel;
 
         public Calcular_Frete()
         {
@@ -64,9 +65,14 @@ namespace CalcularFrete
                 KmDobrado = KMRodada * 2;
             }
 
+            // consumo do combustível
+
+            QtdCombustivel = KmDobrado / float.Parse(txtConsumo.Text);
+
             // custo do combustível
 
-            custoCombustivel = float.Parse(txtConsumo.Text) * KmDobrado;
+            custoCombustivel = double.Parse(txtCombustivel.Text) * QtdCombustivel;
+            txtDespesa.Text = custoCombustivel.ToString();
         }
     }
 }

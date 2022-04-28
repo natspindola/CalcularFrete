@@ -102,7 +102,7 @@ namespace CalcularFrete
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(7, 68);
+            this.label5.Location = new System.Drawing.Point(110, 67);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(95, 13);
             this.label5.TabIndex = 4;
@@ -111,7 +111,7 @@ namespace CalcularFrete
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(171, 68);
+            this.label6.Location = new System.Drawing.Point(7, 67);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(43, 13);
             this.label6.TabIndex = 5;
@@ -121,7 +121,7 @@ namespace CalcularFrete
             // 
             this.checkIdaVolta.AutoSize = true;
             this.checkIdaVolta.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.checkIdaVolta.Location = new System.Drawing.Point(333, 86);
+            this.checkIdaVolta.Location = new System.Drawing.Point(361, 84);
             this.checkIdaVolta.Name = "checkIdaVolta";
             this.checkIdaVolta.Size = new System.Drawing.Size(76, 17);
             this.checkIdaVolta.TabIndex = 6;
@@ -131,7 +131,7 @@ namespace CalcularFrete
             // checkIda
             // 
             this.checkIda.AutoSize = true;
-            this.checkIda.Location = new System.Drawing.Point(415, 86);
+            this.checkIda.Location = new System.Drawing.Point(443, 84);
             this.checkIda.Name = "checkIda";
             this.checkIda.Size = new System.Drawing.Size(41, 17);
             this.checkIda.TabIndex = 7;
@@ -154,9 +154,9 @@ namespace CalcularFrete
             // 
             // txtCombustivel
             // 
-            this.txtCombustivel.Location = new System.Drawing.Point(10, 84);
+            this.txtCombustivel.Location = new System.Drawing.Point(113, 82);
             this.txtCombustivel.Name = "txtCombustivel";
-            this.txtCombustivel.Size = new System.Drawing.Size(156, 20);
+            this.txtCombustivel.Size = new System.Drawing.Size(92, 20);
             this.txtCombustivel.TabIndex = 4;
             // 
             // btnConfirma
@@ -175,7 +175,7 @@ namespace CalcularFrete
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(9, 233);
+            this.label7.Location = new System.Drawing.Point(211, 67);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(136, 13);
             this.label7.TabIndex = 14;
@@ -184,7 +184,7 @@ namespace CalcularFrete
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(176, 233);
+            this.label8.Location = new System.Drawing.Point(335, 236);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(136, 13);
             this.label8.TabIndex = 15;
@@ -193,7 +193,7 @@ namespace CalcularFrete
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(9, 286);
+            this.label9.Location = new System.Drawing.Point(9, 236);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(62, 13);
             this.label9.TabIndex = 16;
@@ -202,7 +202,7 @@ namespace CalcularFrete
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(173, 286);
+            this.label10.Location = new System.Drawing.Point(173, 236);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(74, 13);
             this.label10.TabIndex = 17;
@@ -219,30 +219,30 @@ namespace CalcularFrete
             // 
             // txtConsumo
             // 
-            this.txtConsumo.Location = new System.Drawing.Point(12, 249);
+            this.txtConsumo.Location = new System.Drawing.Point(214, 82);
             this.txtConsumo.Name = "txtConsumo";
-            this.txtConsumo.Size = new System.Drawing.Size(157, 20);
+            this.txtConsumo.Size = new System.Drawing.Size(92, 20);
             this.txtConsumo.TabIndex = 9;
             // 
             // txtDespesa
             // 
-            this.txtDespesa.Location = new System.Drawing.Point(176, 249);
+            this.txtDespesa.Location = new System.Drawing.Point(335, 252);
             this.txtDespesa.Name = "txtDespesa";
-            this.txtDespesa.Size = new System.Drawing.Size(135, 20);
+            this.txtDespesa.Size = new System.Drawing.Size(153, 20);
             this.txtDespesa.TabIndex = 10;
             // 
             // txtKMRodado
             // 
-            this.txtKMRodado.Location = new System.Drawing.Point(12, 302);
+            this.txtKMRodado.Location = new System.Drawing.Point(12, 252);
             this.txtKMRodado.Name = "txtKMRodado";
-            this.txtKMRodado.Size = new System.Drawing.Size(157, 20);
+            this.txtKMRodado.Size = new System.Drawing.Size(156, 20);
             this.txtKMRodado.TabIndex = 11;
             // 
             // txtCustoKM
             // 
-            this.txtCustoKM.Location = new System.Drawing.Point(176, 302);
+            this.txtCustoKM.Location = new System.Drawing.Point(176, 252);
             this.txtCustoKM.Name = "txtCustoKM";
-            this.txtCustoKM.Size = new System.Drawing.Size(135, 20);
+            this.txtCustoKM.Size = new System.Drawing.Size(153, 20);
             this.txtCustoKM.TabIndex = 12;
             // 
             // txtTotal
@@ -260,12 +260,14 @@ namespace CalcularFrete
             this.panel1.Controls.Add(this.imgFrota);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.txtConsumo);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.checkIdaVolta);
             this.panel1.Controls.Add(this.checkIda);
             this.panel1.Controls.Add(this.txtLocal);
             this.panel1.Controls.Add(this.txtDistancia);
             this.panel1.Controls.Add(this.txtCombustivel);
+            this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Location = new System.Drawing.Point(2, 37);
@@ -284,9 +286,9 @@ namespace CalcularFrete
             // cmbTabela
             // 
             this.cmbTabela.FormattingEnabled = true;
-            this.cmbTabela.Location = new System.Drawing.Point(174, 85);
+            this.cmbTabela.Location = new System.Drawing.Point(10, 81);
             this.cmbTabela.Name = "cmbTabela";
-            this.cmbTabela.Size = new System.Drawing.Size(153, 21);
+            this.cmbTabela.Size = new System.Drawing.Size(92, 21);
             this.cmbTabela.TabIndex = 5;
             // 
             // imgFrota
@@ -320,12 +322,10 @@ namespace CalcularFrete
             this.Controls.Add(this.txtCustoKM);
             this.Controls.Add(this.txtKMRodado);
             this.Controls.Add(this.txtDespesa);
-            this.Controls.Add(this.txtConsumo);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.btnConfirma);
             this.Controls.Add(this.label1);
             this.Name = "Calcular_Frete";
