@@ -53,10 +53,10 @@ namespace CalcularFrete
             this.txtCustoKM = new System.Windows.Forms.TextBox();
             this.txtTotal = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtVeiculo = new System.Windows.Forms.TextBox();
             this.cmbTabela = new System.Windows.Forms.ComboBox();
             this.imgFrota = new System.Windows.Forms.PictureBox();
             this.imgVeiculo = new System.Windows.Forms.PictureBox();
-            this.txtVeiculo = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgFrota)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgVeiculo)).BeginInit();
@@ -270,6 +270,14 @@ namespace CalcularFrete
             this.panel1.Size = new System.Drawing.Size(774, 131);
             this.panel1.TabIndex = 24;
             // 
+            // txtVeiculo
+            // 
+            this.txtVeiculo.Location = new System.Drawing.Point(10, 37);
+            this.txtVeiculo.Name = "txtVeiculo";
+            this.txtVeiculo.Size = new System.Drawing.Size(156, 20);
+            this.txtVeiculo.TabIndex = 1;
+            this.txtVeiculo.TextChanged += new System.EventHandler(this.txtVeiculo_TextChanged);
+            // 
             // cmbTabela
             // 
             this.cmbTabela.FormattingEnabled = true;
@@ -296,13 +304,6 @@ namespace CalcularFrete
             this.imgVeiculo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imgVeiculo.TabIndex = 14;
             this.imgVeiculo.TabStop = false;
-            // 
-            // txtVeiculo
-            // 
-            this.txtVeiculo.Location = new System.Drawing.Point(10, 37);
-            this.txtVeiculo.Name = "txtVeiculo";
-            this.txtVeiculo.Size = new System.Drawing.Size(156, 20);
-            this.txtVeiculo.TabIndex = 1;
             // 
             // Calcular_Frete
             // 

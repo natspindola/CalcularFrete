@@ -17,24 +17,32 @@ namespace CalcularFrete
             InitializeComponent();
         }
 
-        private void txtvVeiculo_TextChanged(object sender, EventArgs e)
+        private void txtVeiculo_TextChanged(object sender, EventArgs e)
         {
-            if(txtVeiculo.Text == "carro")
+            if (txtVeiculo.Text == "carro")
             {
                 imgVeiculo.Image = CalcularFrete.Properties.Resources.carro;
-                
+
             }
-            else if(txtVeiculo.Text == "moto")
+            else if (txtVeiculo.Text == "moto")
             {
                 imgVeiculo.Image = CalcularFrete.Properties.Resources.moto;
             }
-            else if(txtVeiculo.Text == "caminhão")
+            else if (txtVeiculo.Text == "caminhão")
             {
                 imgVeiculo.Image = CalcularFrete.Properties.Resources.caminhao;
             }
-            else if(txtVeiculo.Text == "van")
+            else if (txtVeiculo.Text == "caminhao")
+            {
+                imgVeiculo.Image = CalcularFrete.Properties.Resources.caminhao;
+            }
+            else if (txtVeiculo.Text == "van")
             {
                 imgVeiculo.Image = CalcularFrete.Properties.Resources.van;
+            }
+            else
+            {
+                
             }
         }
     }
