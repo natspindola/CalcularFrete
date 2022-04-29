@@ -124,7 +124,7 @@ namespace CalcularFrete
             this.checkIdaVolta.Location = new System.Drawing.Point(352, 84);
             this.checkIdaVolta.Name = "checkIdaVolta";
             this.checkIdaVolta.Size = new System.Drawing.Size(76, 17);
-            this.checkIdaVolta.TabIndex = 6;
+            this.checkIdaVolta.TabIndex = 7;
             this.checkIdaVolta.Text = "Ida / Volta";
             this.checkIdaVolta.UseVisualStyleBackColor = true;
             // 
@@ -134,7 +134,7 @@ namespace CalcularFrete
             this.checkIda.Location = new System.Drawing.Point(434, 84);
             this.checkIda.Name = "checkIda";
             this.checkIda.Size = new System.Drawing.Size(41, 17);
-            this.checkIda.TabIndex = 7;
+            this.checkIda.TabIndex = 8;
             this.checkIda.Text = "Ida";
             this.checkIda.UseVisualStyleBackColor = true;
             // 
@@ -150,14 +150,14 @@ namespace CalcularFrete
             this.txtDistancia.Location = new System.Drawing.Point(10, 85);
             this.txtDistancia.Name = "txtDistancia";
             this.txtDistancia.Size = new System.Drawing.Size(104, 20);
-            this.txtDistancia.TabIndex = 3;
+            this.txtDistancia.TabIndex = 4;
             // 
             // txtValor
             // 
             this.txtValor.Location = new System.Drawing.Point(229, 84);
             this.txtValor.Name = "txtValor";
             this.txtValor.Size = new System.Drawing.Size(103, 20);
-            this.txtValor.TabIndex = 4;
+            this.txtValor.TabIndex = 6;
             // 
             // btnConfirma
             // 
@@ -167,7 +167,7 @@ namespace CalcularFrete
             this.btnConfirma.Location = new System.Drawing.Point(12, 174);
             this.btnConfirma.Name = "btnConfirma";
             this.btnConfirma.Size = new System.Drawing.Size(173, 44);
-            this.btnConfirma.TabIndex = 8;
+            this.btnConfirma.TabIndex = 9;
             this.btnConfirma.Text = "Confirmar";
             this.btnConfirma.UseVisualStyleBackColor = false;
             this.btnConfirma.Click += new System.EventHandler(this.btnConfirma_Click);
@@ -222,28 +222,28 @@ namespace CalcularFrete
             this.txtAutonomia.Location = new System.Drawing.Point(120, 84);
             this.txtAutonomia.Name = "txtAutonomia";
             this.txtAutonomia.Size = new System.Drawing.Size(103, 20);
-            this.txtAutonomia.TabIndex = 9;
+            this.txtAutonomia.TabIndex = 5;
             // 
             // txtDespesa
             // 
             this.txtDespesa.Location = new System.Drawing.Point(335, 252);
             this.txtDespesa.Name = "txtDespesa";
             this.txtDespesa.Size = new System.Drawing.Size(153, 20);
-            this.txtDespesa.TabIndex = 10;
+            this.txtDespesa.TabIndex = 12;
             // 
             // txtKMRodado
             // 
             this.txtKMRodado.Location = new System.Drawing.Point(12, 252);
             this.txtKMRodado.Name = "txtKMRodado";
             this.txtKMRodado.Size = new System.Drawing.Size(156, 20);
-            this.txtKMRodado.TabIndex = 11;
+            this.txtKMRodado.TabIndex = 10;
             // 
             // txtCustoKM
             // 
             this.txtCustoKM.Location = new System.Drawing.Point(176, 252);
             this.txtCustoKM.Name = "txtCustoKM";
             this.txtCustoKM.Size = new System.Drawing.Size(153, 20);
-            this.txtCustoKM.TabIndex = 12;
+            this.txtCustoKM.TabIndex = 11;
             // 
             // txtTotal
             // 
@@ -286,10 +286,14 @@ namespace CalcularFrete
             // txtTabela
             // 
             this.txtTabela.FormattingEnabled = true;
+            this.txtTabela.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3"});
             this.txtTabela.Location = new System.Drawing.Point(336, 35);
             this.txtTabela.Name = "txtTabela";
             this.txtTabela.Size = new System.Drawing.Size(92, 21);
-            this.txtTabela.TabIndex = 5;
+            this.txtTabela.TabIndex = 3;
             // 
             // imgFrota
             // 

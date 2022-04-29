@@ -73,6 +73,11 @@ namespace CalcularFrete
 
             custoCombustivel = double.Parse(txtValor.Text) * QtdCombustivel;
             txtDespesa.Text = custoCombustivel.ToString();
+
+            txtTotal.Text = Convert.ToString(custoCombustivel * int.Parse(txtTabela.Text));
+
+            txtKMRodado.Text = KmDobrado.ToString();
+            txtCustoKM.Text = Convert.ToString(float.Parse(txtTotal.Text) / KmDobrado);
         }
     }
 }
