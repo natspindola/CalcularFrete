@@ -57,6 +57,7 @@ namespace CalcularFrete
             this.txtTabela = new System.Windows.Forms.ComboBox();
             this.imgFrota = new System.Windows.Forms.PictureBox();
             this.imgVeiculo = new System.Windows.Forms.PictureBox();
+            this.btnLimpar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgFrota)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgVeiculo)).BeginInit();
@@ -151,6 +152,7 @@ namespace CalcularFrete
             this.txtDistancia.Name = "txtDistancia";
             this.txtDistancia.Size = new System.Drawing.Size(104, 20);
             this.txtDistancia.TabIndex = 4;
+            this.txtDistancia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDistancia_KeyPress);
             // 
             // txtValor
             // 
@@ -158,10 +160,11 @@ namespace CalcularFrete
             this.txtValor.Name = "txtValor";
             this.txtValor.Size = new System.Drawing.Size(103, 20);
             this.txtValor.TabIndex = 6;
+            this.txtValor.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtValor_KeyPress);
             // 
             // btnConfirma
             // 
-            this.btnConfirma.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnConfirma.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnConfirma.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnConfirma.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConfirma.Location = new System.Drawing.Point(12, 174);
@@ -223,6 +226,7 @@ namespace CalcularFrete
             this.txtAutonomia.Name = "txtAutonomia";
             this.txtAutonomia.Size = new System.Drawing.Size(103, 20);
             this.txtAutonomia.TabIndex = 5;
+            this.txtAutonomia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtAutonomia_KeyPress);
             // 
             // txtDespesa
             // 
@@ -307,12 +311,25 @@ namespace CalcularFrete
             // 
             // imgVeiculo
             // 
-            this.imgVeiculo.Location = new System.Drawing.Point(520, 184);
+            this.imgVeiculo.Location = new System.Drawing.Point(494, 184);
             this.imgVeiculo.Name = "imgVeiculo";
-            this.imgVeiculo.Size = new System.Drawing.Size(254, 138);
+            this.imgVeiculo.Size = new System.Drawing.Size(280, 138);
             this.imgVeiculo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imgVeiculo.TabIndex = 14;
             this.imgVeiculo.TabStop = false;
+            // 
+            // btnLimpar
+            // 
+            this.btnLimpar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnLimpar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLimpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpar.Location = new System.Drawing.Point(304, 174);
+            this.btnLimpar.Name = "btnLimpar";
+            this.btnLimpar.Size = new System.Drawing.Size(173, 44);
+            this.btnLimpar.TabIndex = 25;
+            this.btnLimpar.Text = "Limpar";
+            this.btnLimpar.UseVisualStyleBackColor = false;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // Calcular_Frete
             // 
@@ -320,6 +337,7 @@ namespace CalcularFrete
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(783, 332);
+            this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.imgVeiculo);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.txtTotal);
@@ -372,6 +390,7 @@ namespace CalcularFrete
         private System.Windows.Forms.ComboBox txtTabela;
         private System.Windows.Forms.PictureBox imgVeiculo;
         private System.Windows.Forms.TextBox txtVeiculo;
+        private System.Windows.Forms.Button btnLimpar;
     }
 }
 
