@@ -67,11 +67,11 @@ namespace CalcularFrete
 
             // consumo do combustível
 
-            QtdCombustivel = KmDobrado / float.Parse(txtConsumo.Text);
+            QtdCombustivel = KmDobrado / float.Parse(txtAutonomia.Text);
 
             // custo do combustível
 
-            custoCombustivel = double.Parse(txtCombustivel.Text) * QtdCombustivel;
+            custoCombustivel = double.Parse(txtValor.Text) * QtdCombustivel;
             txtDespesa.Text = custoCombustivel.ToString();
         }
     }
